@@ -30,6 +30,7 @@ function Person() {
                     src={themeIcon}
                     alt="Color mode icon."
                     onClick={toggleTheme}
+                    style={{cursor: 'pointer'}}
                 />
             </div>
 
@@ -44,21 +45,21 @@ function Person() {
 
                 <span>
                     <a href="https://github.com/EduardoGarzon" target='_blank'>
-                        <img src={githubIcon} alt="Github Icon." />
+                        <img src={githubIcon} alt="Github Icon."/>
                     </a>
                     <a href="https://www.linkedin.com/in/eduardo-garzon/" target='_blank'>
                         <img src={linkedinIcon} alt="Linkdlin Icon." />
                     </a>
                 </span>
 
-                <p>
+                <p className={styles.description}>
                     Committed to continuous learning and
                     motivated by the dream of developing professionally as a
                     fullstack developer.
                 </p>
 
                 <a href={CV} download>
-                    <button className="hover">
+                    <button className="hover" id={theme}>
                         Resume
                     </button>
                 </a>

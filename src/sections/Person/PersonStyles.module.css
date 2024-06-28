@@ -1,0 +1,86 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    height: 100dvh;
+
+    .person {
+        max-width: 200px;
+    }
+
+    span {
+        display: flex;
+        gap: 25px;
+        justify-content: center;
+
+        a {
+            margin: 0;
+
+            img {
+                width: 30px;
+            }
+        }
+    }
+
+    a {
+        width: fit-content;
+        align-self: center;
+    }
+
+    button {
+        background-color: var(--btn-color);
+        color: var(--btn-text-color);
+        border: none;
+        border-radius: 20px;
+        width: 126px;
+        height: 50px;
+        font-size: 20px;
+        font-weight: bold;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        transition: box-shadow 300ms ease-in-out, transform 300ms ease-in-out;
+    }
+    
+    button[id="light"]:hover {
+        background-color: rgb(207, 207, 6);
+        text-shadow: 0px 0px 3px #222;
+        box-shadow: 0 0px 10px #222;
+
+    }
+
+    button[id="dark"]:hover {
+        background-color: rgb(207, 207, 6);
+        text-shadow: 0px 0px 3px #fff;
+        box-shadow: 0 0px 3px rgba(255, 255, 255, 0.75);
+    }
+
+    button:hover {
+        transform: scale(1.05);
+    }
+
+    button:active {
+        transform: translateY(2px);
+    }
+}
+
+.colorModeContainer {
+    position: relative;
+}
+
+.colorMode {
+    position: absolute;
+    right: 0;
+    width: 25px;
+}
+
+.description {
+    max-width: 24ch;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}

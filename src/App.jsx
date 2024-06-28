@@ -3,7 +3,11 @@ import Person from './sections/Person/Person'
 
 function App() {
 
-  return <><Person></Person></>
+  return (
+    <>
+      <Person></Person>
+    </>
+  )
 
 }
 
