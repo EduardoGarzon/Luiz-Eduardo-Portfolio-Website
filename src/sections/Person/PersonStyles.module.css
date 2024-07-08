@@ -84,3 +84,27 @@
     justify-content: center;
     gap: 20px;
 }
+
+@media (width >=800px) {
+    .container {
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-evenly;
+    
+        .person {
+            max-width: 350px;
+            width: 350px;
+            margin-left: 3em;
+        }
+    }
+}
+
+@media (width >=1400px) {
+    .container {
+        .person {
+            max-width: 400px;
+            width: 400px;
+            margin-left: 3em;
+        }
+    }
+}
