@@ -1,5 +1,5 @@
 import styles from './PersonStyles.module.css'
-import personalImage from '../../assets/hero-img.png'
+import personalImage from '../../assets/LuizEduardo.png'
 import sun from '../../assets/sun.svg'
 import moon from '../../assets/moon.svg'
 import githubLight from '../../assets/github-light.svg'
